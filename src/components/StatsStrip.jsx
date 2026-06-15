@@ -10,7 +10,10 @@ const stats = [
 
 export default function StatsStrip() {
   return (
-    <section id="stats" className="py-12 sm:py-14 border-y border-electric-border bg-surface/30">
+    <section id="stats" className="relative py-12 sm:py-14 border-y border-electric-border bg-surface/30 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-electric rounded-full opacity-[0.015] blur-[100px]" />
+      </div>
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {stats.map((item, i) => (

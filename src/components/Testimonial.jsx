@@ -2,8 +2,11 @@ import { motion } from "framer-motion"
 
 export default function Testimonial() {
   return (
-    <section className="py-24 sm:py-28 md:py-36 bg-surface/20">
-      <div className="max-w-4xl mx-auto px-6 text-center">
+    <section className="relative py-24 sm:py-28 md:py-36 bg-surface/20 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-electric rounded-full opacity-[0.02] blur-[140px]" />
+      </div>
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

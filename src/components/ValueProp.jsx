@@ -19,8 +19,11 @@ const rightBullets = [
 
 export default function ValueProp() {
   return (
-    <section id="value-prop" className="py-24 sm:py-28 md:py-36 bg-surface/20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="value-prop" className="relative py-24 sm:py-28 md:py-36 bg-surface/20 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/2 right-1/4 w-[500px] h-[500px] bg-electric rounded-full opacity-[0.02] blur-[130px]" />
+      </div>
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-14 sm:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}

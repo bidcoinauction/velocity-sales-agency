@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react"
 
 export default function CTASection() {
   return (
-    <section id="cta" className="relative py-24 sm:py-28 md:py-36 overflow-hidden">
+    <section id="cta" className="relative py-28 sm:py-32 md:py-40 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] sm:w-[900px] h-[700px] sm:h-[900px] bg-electric rounded-full opacity-[0.025] blur-[150px]" />
       </div>

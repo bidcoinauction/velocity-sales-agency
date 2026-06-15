@@ -58,7 +58,7 @@ export default function Navbar() {
             href="#cta"
             className="bg-electric/90 hover:bg-electric text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200"
           >
-            Strategy Call
+            Book a Strategy Call
           </a>
         </div>
 
@@ -96,7 +96,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className="bg-electric/90 hover:bg-electric text-white px-5 py-3 rounded-full text-sm font-semibold text-center transition-all mt-2"
               >
-                Strategy Call
+                Book a Strategy Call
               </a>
             </div>
           </motion.div>

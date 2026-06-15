@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import StatsStrip from "./components/StatsStrip"
+import WhoWeHelp from "./components/WhoWeHelp"
 import Services from "./components/Services"
 import Testimonial from "./components/Testimonial"
 import ValueProp from "./components/ValueProp"
@@ -15,6 +16,7 @@ export default function App() {
       <main>
         <Hero />
         <StatsStrip />
+        <WhoWeHelp />
         <Services />
         <Testimonial />
         <ValueProp />

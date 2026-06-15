@@ -1,16 +1,15 @@
 import { motion } from "framer-motion"
-import { Mail, Phone, MapPin, Shield, FileText, Gift, Building } from "lucide-react"
+import { Mail, Phone, MapPin, FileText, Gift, Building } from "lucide-react"
 
 const benefits = [
-  { icon: Shield, text: "Owner-led — you work directly with Thomas" },
   { icon: FileText, text: "No contracts to start" },
-  { icon: Gift, text: "100% free first consultation" },
+  { icon: Gift, text: "Complimentary strategy session" },
   { icon: Building, text: "Based in Boston, MA" },
 ]
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-24 sm:py-28 md:py-36 bg-surface/20 overflow-hidden">
+    <section id="contact" className="relative py-28 sm:py-32 md:py-40 bg-surface/20 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-electric rounded-full opacity-[0.02] blur-[120px]" />
       </div>
@@ -100,9 +99,7 @@ export default function Contact() {
               </div>
               <div>
                 <div className="text-xs text-muted font-medium">Location</div>
-                <div className="text-sm sm:text-base text-white">
-                  Boston, MA
-                </div>
+                <div className="text-sm sm:text-base text-white">Boston, MA</div>
               </div>
             </div>
           </motion.div>

@@ -35,7 +35,7 @@ const cardVariants = {
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-24 sm:py-28 md:py-36 overflow-hidden">
+    <section id="services" className="relative py-28 sm:py-32 md:py-40 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-electric rounded-full opacity-[0.02] blur-[120px]" />
       </div>
@@ -65,7 +65,7 @@ export default function Services() {
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.1 }}
-              className="group relative bg-surface border border-white/[0.06] rounded-2xl p-6 sm:p-8 card-hover hover:border-electric-border"
+              className="group relative bg-surface border border-white/[0.06] rounded-2xl p-6 sm:p-8 card-hover hover:border-electric-border hover:shadow-[0_0_40px_-12px_rgba(74,133,240,0.15)]"
             >
               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-electric-subtle flex items-center justify-center mb-4 sm:mb-5 group-hover:bg-electric/[0.10] transition-colors">
                 <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-electric" />

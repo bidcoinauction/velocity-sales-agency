@@ -33,7 +33,7 @@ const fadeUpVariants = {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28">
       <motion.div
         animate={{
           x: [0, 40, -30, 0],
@@ -59,7 +59,7 @@ export default function Hero() {
           <img
             src={LOGO_URL}
             alt="Velocity Sales Agency"
-            className="h-32 sm:h-36 md:h-48 lg:h-52 w-auto object-contain mx-auto drop-shadow-[0_0_60px_rgba(74,133,240,0.12)]"
+            className="h-40 sm:h-44 md:h-56 lg:h-64 w-auto object-contain mx-auto drop-shadow-[0_0_60px_rgba(74,133,240,0.12)]"
             onError={(e) => {
               if (e.target.src !== FALLBACK_URL) e.target.src = FALLBACK_URL
             }}

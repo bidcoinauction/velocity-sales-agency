@@ -17,7 +17,7 @@ export default function Footer() {
             <img
               src={LOGO_URL}
               alt="Velocity Sales Agency"
-              className="h-20 sm:h-24 w-auto object-contain"
+              className="h-28 sm:h-32 w-auto object-contain"
               onError={(e) => {
                 if (e.target.src !== FALLBACK_URL) e.target.src = FALLBACK_URL
               }}

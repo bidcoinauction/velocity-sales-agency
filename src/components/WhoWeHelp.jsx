@@ -36,10 +36,7 @@ const cardVariants = {
 export default function WhoWeHelp() {
   return (
     <section id="who-we-help" className="relative py-28 sm:py-32 md:py-40 overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-electric rounded-full opacity-[0.02] blur-[120px]" />
-      </div>
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}

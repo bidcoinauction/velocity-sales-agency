@@ -2,9 +2,6 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 
-const LOGO_URL = "https://stadium-signal.standard.us-east-1.oortstorages.com/ChatGPT%20Image%20Jun%2015%2C%202026%2C%2001_58_20%20PM.png"
-const FALLBACK_URL = "https://stadium-signal.standard.us-east-1.oortstorages.com/logo.png"
-
 const navLinks = [
   { label: "Services", href: "#services" },
   { label: "What We Do", href: "#value-prop" },
@@ -25,22 +22,21 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -80 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-dark-bg/80 backdrop-blur-xl border-b border-electric-border"
+          ? "bg-dark-bg/80 backdrop-blur-md border-b border-electric-border"
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-5 sm:px-6 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between">
         <a href="#" className="flex items-center shrink-0">
           <img
-            src={LOGO_URL}
+            src="/logo.png"
             alt="Velocity Sales Agency"
-            className="h-12 w-auto object-contain"
-            onError={(e) => {
-              if (e.target.src !== FALLBACK_URL) e.target.src = FALLBACK_URL
-            }}
+            width="160"
+            height="40"
+            className="h-10 md:h-12 w-auto object-contain"
           />
         </a>
 
@@ -56,7 +52,7 @@ export default function Navbar() {
           ))}
           <a
             href="#cta"
-            className="bg-electric/90 hover:bg-electric text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200"
+            className="bg-electric/90 hover:bg-electric text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 whitespace-nowrap"
           >
             Book a Strategy Call
           </a>
@@ -77,8 +73,8 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="md:hidden bg-surface/95 backdrop-blur-xl border-t border-electric-border overflow-hidden"
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="md:hidden bg-surface/95 backdrop-blur-md border-t border-electric-border overflow-hidden"
           >
             <div className="px-6 py-6 flex flex-col gap-3">
               {navLinks.map((link) => (
@@ -86,7 +82,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="text-muted hover:text-white transition-colors text-sm font-medium py-2"
+                  className="text-muted hover:text-white transition-colors text-sm font-medium py-3"
                 >
                   {link.label}
                 </a>

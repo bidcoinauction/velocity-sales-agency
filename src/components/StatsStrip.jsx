@@ -20,12 +20,12 @@ export default function StatsStrip() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.35, delay: i * 0.06 }}
-              className="flex items-center gap-3 justify-center md:justify-start"
+              className="flex items-center gap-2 sm:gap-3 justify-center md:justify-start"
             >
               <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-electric-subtle flex items-center justify-center shrink-0">
                 <item.icon className="w-4 h-4 sm:w-5 sm:h-5 text-electric" />
               </div>
-              <span className="text-sm sm:text-base font-semibold text-muted-light whitespace-nowrap">
+              <span className="text-xs sm:text-sm md:text-base font-semibold text-muted-light leading-tight">
                 {item.label}
               </span>
             </motion.div>

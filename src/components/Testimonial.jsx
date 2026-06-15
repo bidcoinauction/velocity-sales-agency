@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 export default function Testimonial() {
   return (
-    <section className="py-20 sm:py-24 md:py-32 bg-surface/20">
+    <section className="py-24 sm:py-28 md:py-36 bg-surface/20">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -19,8 +19,9 @@ export default function Testimonial() {
           </svg>
 
           <blockquote className="text-lg sm:text-xl md:text-2xl text-muted-light font-medium leading-relaxed mb-8 sm:mb-10 max-w-2xl mx-auto">
-            "We don't teach scripts you forget. We rewire how you think about
-            selling."
+            "Revenue growth is rarely a lead problem. It's usually a follow-up
+            problem, a process problem, or an execution problem. Velocity helps
+            solve all three."
           </blockquote>
 
           <div className="flex items-center justify-center gap-3">

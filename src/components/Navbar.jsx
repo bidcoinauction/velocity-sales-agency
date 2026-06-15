@@ -6,7 +6,7 @@ const LOGO_URL = "https://stadium-signal.standard.us-east-1.oortstorages.com/Cha
 const FALLBACK_URL = "https://stadium-signal.standard.us-east-1.oortstorages.com/logo.png"
 
 const navLinks = [
-  { label: "Coaching", href: "#services" },
+  { label: "Services", href: "#services" },
   { label: "What We Do", href: "#value-prop" },
   { label: "Contact", href: "#contact" },
 ]
@@ -32,12 +32,12 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-5 sm:px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 h-20 flex items-center justify-between">
         <a href="#" className="flex items-center shrink-0">
           <img
             src={LOGO_URL}
             alt="Velocity Sales Agency"
-            className="h-9 sm:h-10 w-auto object-contain"
+            className="h-12 w-auto object-contain"
             onError={(e) => {
               if (e.target.src !== FALLBACK_URL) e.target.src = FALLBACK_URL
             }}
@@ -58,7 +58,7 @@ export default function Navbar() {
             href="#cta"
             className="bg-electric/90 hover:bg-electric text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200"
           >
-            Free Consultation
+            Strategy Call
           </a>
         </div>
 
@@ -96,7 +96,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className="bg-electric/90 hover:bg-electric text-white px-5 py-3 rounded-full text-sm font-semibold text-center transition-all mt-2"
               >
-                Free Consultation
+                Strategy Call
               </a>
             </div>
           </motion.div>

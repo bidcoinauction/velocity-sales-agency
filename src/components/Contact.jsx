@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import { Mail, Phone, MapPin, Shield, FileText, Gift, Building } from "lucide-react"
 
 const benefits = [
-  { icon: Shield, text: "Owner-led — you talk to Thomas directly" },
+  { icon: Shield, text: "Owner-led — you work directly with Thomas" },
   { icon: FileText, text: "No contracts to start" },
   { icon: Gift, text: "100% free first consultation" },
   { icon: Building, text: "Based in Boston, MA" },
@@ -10,20 +10,20 @@ const benefits = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 sm:py-24 md:py-32 bg-surface/20">
+    <section id="contact" className="py-24 sm:py-28 md:py-36 bg-surface/20">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12 sm:mb-16"
+          className="text-center mb-14 sm:mb-18"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-3 sm:mb-4">
             Get in Touch
           </h2>
           <p className="text-muted text-base sm:text-lg max-w-xl mx-auto px-4">
-            Ready to build real sales skills? Let's talk.
+            Ready to improve sales execution and revenue performance?
           </p>
         </motion.div>
 

@@ -4,12 +4,12 @@
   --color-dark-bg: #08080f;
   --color-surface: #111118;
   --color-surface-light: #1a1a26;
-  --color-electric: #3b82f6;
-  --color-electric-light: #60a5fa;
-  --color-electric-subtle: rgba(59, 130, 246, 0.08);
-  --color-electric-glow: rgba(59, 130, 246, 0.1);
-  --color-electric-glow-strong: rgba(59, 130, 246, 0.2);
-  --color-electric-border: rgba(59, 130, 246, 0.12);
+  --color-electric: #4a85f0;
+  --color-electric-light: #6ea1f5;
+  --color-electric-subtle: rgba(74, 133, 240, 0.07);
+  --color-electric-glow: rgba(74, 133, 240, 0.08);
+  --color-electric-glow-strong: rgba(74, 133, 240, 0.18);
+  --color-electric-border: rgba(74, 133, 240, 0.10);
   --color-muted: #94a3b8;
   --color-muted-light: #cbd5e1;
   --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
@@ -23,8 +23,8 @@ body {
   margin: 0;
   background-color: var(--color-dark-bg);
   background-image:
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.04) 0%, transparent 100%),
-    radial-gradient(ellipse 50% 30% at 50% 110%, rgba(59, 130, 246, 0.02) 0%, transparent 100%);
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(74, 133, 240, 0.03) 0%, transparent 100%),
+    radial-gradient(ellipse 50% 30% at 50% 110%, rgba(74, 133, 240, 0.02) 0%, transparent 100%);
   color: white;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -41,14 +41,17 @@ body {
 }
 
 .glass {
-  background: rgba(17, 17, 24, 0.6);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(59, 130, 246, 0.08);
+  background: rgba(17, 17, 24, 0.5);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(74, 133, 240, 0.06);
 }
 
-[style*="--stagger"] > *:nth-child(1) { transition-delay: 0s; }
-[style*="--stagger"] > *:nth-child(2) { transition-delay: 0.1s; }
-[style*="--stagger"] > *:nth-child(3) { transition-delay: 0.2s; }
-[style*="--stagger"] > *:nth-child(4) { transition-delay: 0.3s; }
-[style*="--stagger"] > *:nth-child(5) { transition-delay: 0.4s; }
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 40px -12px rgba(74, 133, 240, 0.12);
+}

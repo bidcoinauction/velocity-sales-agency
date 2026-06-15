@@ -2,22 +2,22 @@ const LOGO_URL = "https://stadium-signal.standard.us-east-1.oortstorages.com/Cha
 const FALLBACK_URL = "https://stadium-signal.standard.us-east-1.oortstorages.com/logo.png"
 
 const footerLinks = [
-  { label: "Coaching", href: "#services" },
+  { label: "Services", href: "#services" },
   { label: "What We Do", href: "#value-prop" },
   { label: "Contact", href: "#contact" },
-  { label: "Free Consultation", href: "#cta" },
+  { label: "Strategy Call", href: "#cta" },
 ]
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/[0.06] py-10 sm:py-12">
+    <footer className="border-t border-white/[0.06] py-12 sm:py-14">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <a href="#" className="flex items-center shrink-0">
             <img
               src={LOGO_URL}
               alt="Velocity Sales Agency"
-              className="h-7 sm:h-8 w-auto object-contain"
+              className="h-20 sm:h-24 w-auto object-contain"
               onError={(e) => {
                 if (e.target.src !== FALLBACK_URL) e.target.src = FALLBACK_URL
               }}

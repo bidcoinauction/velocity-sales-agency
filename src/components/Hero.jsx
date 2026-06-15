@@ -13,7 +13,7 @@ const containerVariants = {
 }
 
 const logoVariants = {
-  hidden: { opacity: 0, scale: 0.8 },
+  hidden: { opacity: 0, scale: 0.85 },
   visible: {
     opacity: 1,
     scale: 1,
@@ -33,7 +33,7 @@ const fadeUpVariants = {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-24">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
       <motion.div
         animate={{
           x: [0, 40, -30, 0],
@@ -45,9 +45,9 @@ export default function Hero() {
           ease: "easeInOut",
           repeatType: "mirror",
         }}
-        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-electric rounded-full opacity-[0.025] blur-[160px] pointer-events-none"
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-electric rounded-full opacity-[0.02] blur-[160px] pointer-events-none"
       />
-      <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-electric rounded-full opacity-[0.015] blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-electric rounded-full opacity-[0.012] blur-[120px] pointer-events-none" />
 
       <motion.div
         variants={containerVariants}
@@ -55,42 +55,32 @@ export default function Hero() {
         animate="visible"
         className="relative z-10 max-w-5xl mx-auto px-6 text-center"
       >
-        <motion.div variants={logoVariants} className="mb-6 sm:mb-8">
+        <motion.div variants={logoVariants} className="mb-8 sm:mb-10">
           <img
             src={LOGO_URL}
             alt="Velocity Sales Agency"
-            className="h-20 sm:h-24 md:h-28 w-auto object-contain mx-auto drop-shadow-[0_0_50px_rgba(59,130,246,0.15)]"
+            className="h-32 sm:h-36 md:h-48 lg:h-52 w-auto object-contain mx-auto drop-shadow-[0_0_60px_rgba(74,133,240,0.12)]"
             onError={(e) => {
               if (e.target.src !== FALLBACK_URL) e.target.src = FALLBACK_URL
             }}
           />
         </motion.div>
 
-        <motion.h1 className="mb-5 sm:mb-6">
-          <motion.span variants={lineVariants} className="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold italic uppercase leading-[1.05] tracking-tight text-white">
-            Sales Skills.
+        <motion.h1 className="mb-6 sm:mb-7">
+          <motion.span variants={lineVariants} className="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05] tracking-tight text-white">
+            Scale Faster.
           </motion.span>
-          <motion.span variants={lineVariants} className="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold italic uppercase leading-[1.05] tracking-tight">
-            <span className="text-electric">More Confidence.</span>
-          </motion.span>
-          <motion.span variants={lineVariants} className="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold italic uppercase leading-[1.05] tracking-tight text-white">
-            Bigger Results.
+          <motion.span variants={lineVariants} className="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05] tracking-tight">
+            <span className="text-electric">Close Better.</span>
           </motion.span>
         </motion.h1>
 
         <motion.p
           variants={fadeUpVariants}
-          className="text-muted text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-4 sm:mb-5 leading-relaxed px-4"
+          className="text-muted text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-10 sm:mb-12 leading-relaxed px-4"
         >
-          We help individuals and teams develop real sales skills that produce
-          results.
-        </motion.p>
-
-        <motion.p
-          variants={fadeUpVariants}
-          className="text-electric text-sm sm:text-base font-semibold tracking-wide mb-8 sm:mb-10"
-        >
-          Don't refrain your brain — train your brain.
+          Velocity helps businesses transform qualified leads into booked
+          meetings, stronger pipelines, and predictable revenue.
         </motion.p>
 
         <motion.div
@@ -101,13 +91,13 @@ export default function Hero() {
             href="#cta"
             className="bg-electric/90 hover:bg-electric text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-full text-sm sm:text-base font-semibold transition-all duration-200 flex items-center gap-2 w-full sm:w-auto justify-center hover:scale-[1.02]"
           >
-            Book Free Consultation <ArrowRight size="20" />
+            Book a Strategy Call <ArrowRight size="20" />
           </a>
           <a
             href="#services"
             className="border border-white/20 hover:border-white/40 text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-full text-sm sm:text-base font-semibold transition-all duration-200 w-full sm:w-auto justify-center flex hover:bg-white/5"
           >
-            See What We Do
+            View Services
           </a>
         </motion.div>
       </motion.div>
